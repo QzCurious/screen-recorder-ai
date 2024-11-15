@@ -30,8 +30,8 @@ const VIDEO_CONFIGS: Record<VideoFormat, Record<VideoQuality, VideoConfig>> = {
 export function useScreenRecorder() {
   const [isRecording, setIsRecording] = useState(false);
   const [isPaused, setIsPaused] = useState(false);
-  const [isMicEnabled, setIsMicEnabled] = useState(true);
-  const [videoFormat, setVideoFormat] = useState<VideoFormat>('webm-vp9');
+  const [isMicEnabled, setIsMicEnabled] = useState(false);
+  const [videoFormat, setVideoFormat] = useState<VideoFormat>('mp4');
   const [videoQuality, setVideoQuality] = useState<VideoQuality>('high');
   const mediaRecorder = useRef<MediaRecorder | null>(null);
   const recordedChunks = useRef<Blob[]>([]);

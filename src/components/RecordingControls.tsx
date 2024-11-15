@@ -98,9 +98,9 @@ export function RecordingControls({
                 onChange={(e) => onChangeFormat(e.target.value as VideoFormat)}
                 className="w-full bg-zinc-700 text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-red-500"
               >
+                <option value="mp4">MP4 (H.264)</option>
                 <option value="webm-vp9">WebM (VP9)</option>
                 <option value="webm-vp8">WebM (VP8)</option>
-                <option value="mp4">MP4 (H.264)</option>
               </select>
             </div>
             <div>
